@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 STUDY_ROOT = REPO_ROOT / "parkinson_feature_study"
 LOCAL_PACKAGES = STUDY_ROOT / ".python_packages"
 ARTIFACT_ROOT = STUDY_ROOT / "artifacts"
