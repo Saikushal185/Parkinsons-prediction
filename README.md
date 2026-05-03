@@ -17,7 +17,7 @@ New standalone MVP website for the saved Parkinson speech-model artifacts in
 From `C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test`:
 
 ```powershell
-$env:PYTHONPATH="C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\parkinson_feature_study\.python_packages;C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\parkinson_feature_study;C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\pd-model-lab-mvp\backend"
+$env:PYTHONPATH="..\parkinson_feature_study\.python_packages..\parkinson_feature_study;C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\pd-model-lab-mvp\backend"
 .\parkinson_feature_study\.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir .\pd-model-lab-mvp\backend --host 127.0.0.1 --port 8000
 ```
 
@@ -34,7 +34,7 @@ Open `http://127.0.0.1:5173`.
 ## Verification
 
 ```powershell
-$env:PYTHONPATH="C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\parkinson_feature_study\.python_packages;C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\parkinson_feature_study;C:\Users\saiku\OneDrive\Desktop\Projects\SDP_Test\pd-model-lab-mvp\backend"
+$env:PYTHONPATH="..\parkinson_feature_study\.python_packages;..\parkinson_feature_study;..\pd-model-lab-mvp\backend"
 .\parkinson_feature_study\.venv\Scripts\python.exe -m pytest .\pd-model-lab-mvp\backend\tests -q
 
 cd .\pd-model-lab-mvp\frontend
