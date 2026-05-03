@@ -1,7 +1,13 @@
 import pandas as pd
 import pytest
 
-from app.registry import ArtifactRegistry, SchemaValidationError
+from app.registry import ARTIFACT_ROOT, REPO_ROOT, ArtifactRegistry, SchemaValidationError
+
+
+def test_default_artifact_root_points_inside_this_repo():
+    assert REPO_ROOT.name == "pd-model-lab-mvp"
+    assert ARTIFACT_ROOT == REPO_ROOT / "parkinson_feature_study" / "artifacts"
+    assert (ARTIFACT_ROOT / "cross_dataset_comparison.csv").exists()
 
 
 def test_registry_discovers_all_dataset_model_pairs():
