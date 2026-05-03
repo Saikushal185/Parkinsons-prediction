@@ -1,0 +1,19 @@
+# Multi-dataset Parkinson training pipeline
+
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+xgboost
+datasets
+huggingface_hub
+qiskit
+qiskit-machine-learning
+qiskit-algorithms
+qiskit-aer
+librosa
+soundfile
+praat-parselmouth
+pyyaml
+pytest
